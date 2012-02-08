@@ -16,6 +16,9 @@
 		4A48849E14E1B8DA004B8FBF /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A48849C14E1B8DA004B8FBF /* MainWindow.xib */; };
 		4A4884A114E1B8DA004B8FBF /* Exercise3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4884A014E1B8DA004B8FBF /* Exercise3ViewController.m */; };
 		4A4884A414E1B8DA004B8FBF /* Exercise3ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A4884A214E1B8DA004B8FBF /* Exercise3ViewController.xib */; };
+		4A75444914E2C6F600BDC3DB /* Tally.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A75444814E2C6F600BDC3DB /* Tally.m */; };
+		4A850F4B14E2BB82005A06CA /* ExerciseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A850F4914E2BB82005A06CA /* ExerciseView.m */; };
+		4A850F4C14E2BB82005A06CA /* ExerciseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A850F4A14E2BB82005A06CA /* ExerciseView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +26,21 @@
 		4A48848A14E1B8DA004B8FBF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4A48848C14E1B8DA004B8FBF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4A48848E14E1B8DA004B8FBF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		4A48849214E1B8DA004B8FBF /* Exercise3-Info.plist */ = {isa = PBXFileReference; path = "Exercise3-Info.plist"; sourceTree = "<group>"; };
+		4A48849214E1B8DA004B8FBF /* Exercise3-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Exercise3-Info.plist"; sourceTree = "<group>"; };
 		4A48849414E1B8DA004B8FBF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4A48849614E1B8DA004B8FBF /* Exercise3-Prefix.pch */ = {isa = PBXFileReference; path = "Exercise3-Prefix.pch"; sourceTree = "<group>"; };
+		4A48849614E1B8DA004B8FBF /* Exercise3-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Exercise3-Prefix.pch"; sourceTree = "<group>"; };
 		4A48849714E1B8DA004B8FBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4A48849914E1B8DA004B8FBF /* Exercise3AppDelegate.h */ = {isa = PBXFileReference; path = Exercise3AppDelegate.h; sourceTree = "<group>"; };
+		4A48849914E1B8DA004B8FBF /* Exercise3AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Exercise3AppDelegate.h; sourceTree = "<group>"; };
 		4A48849A14E1B8DA004B8FBF /* Exercise3AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Exercise3AppDelegate.m; sourceTree = "<group>"; };
 		4A48849D14E1B8DA004B8FBF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		4A48849F14E1B8DA004B8FBF /* Exercise3ViewController.h */ = {isa = PBXFileReference; path = Exercise3ViewController.h; sourceTree = "<group>"; };
+		4A48849F14E1B8DA004B8FBF /* Exercise3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Exercise3ViewController.h; sourceTree = "<group>"; };
 		4A4884A014E1B8DA004B8FBF /* Exercise3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Exercise3ViewController.m; sourceTree = "<group>"; };
 		4A4884A314E1B8DA004B8FBF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Exercise3ViewController.xib; sourceTree = "<group>"; };
+		4A75444714E2C6F600BDC3DB /* Tally.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tally.h; sourceTree = "<group>"; };
+		4A75444814E2C6F600BDC3DB /* Tally.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tally.m; sourceTree = "<group>"; };
+		4A850F4814E2BB82005A06CA /* ExerciseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseView.h; sourceTree = "<group>"; };
+		4A850F4914E2BB82005A06CA /* ExerciseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseView.m; sourceTree = "<group>"; };
+		4A850F4A14E2BB82005A06CA /* ExerciseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExerciseView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +60,11 @@
 		4A48847B14E1B8DA004B8FBF = {
 			isa = PBXGroup;
 			children = (
+				4A75444714E2C6F600BDC3DB /* Tally.h */,
+				4A75444814E2C6F600BDC3DB /* Tally.m */,
+				4A850F4814E2BB82005A06CA /* ExerciseView.h */,
+				4A850F4914E2BB82005A06CA /* ExerciseView.m */,
+				4A850F4A14E2BB82005A06CA /* ExerciseView.xib */,
 				4A48849014E1B8DA004B8FBF /* Exercise3 */,
 				4A48848914E1B8DA004B8FBF /* Frameworks */,
 				4A48848714E1B8DA004B8FBF /* Products */,
@@ -151,6 +164,7 @@
 				4A48849514E1B8DA004B8FBF /* InfoPlist.strings in Resources */,
 				4A48849E14E1B8DA004B8FBF /* MainWindow.xib in Resources */,
 				4A4884A414E1B8DA004B8FBF /* Exercise3ViewController.xib in Resources */,
+				4A850F4C14E2BB82005A06CA /* ExerciseView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +178,8 @@
 				4A48849814E1B8DA004B8FBF /* main.m in Sources */,
 				4A48849B14E1B8DA004B8FBF /* Exercise3AppDelegate.m in Sources */,
 				4A4884A114E1B8DA004B8FBF /* Exercise3ViewController.m in Sources */,
+				4A850F4B14E2BB82005A06CA /* ExerciseView.m in Sources */,
+				4A75444914E2C6F600BDC3DB /* Tally.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +292,7 @@
 				4A4884A914E1B8DA004B8FBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,9 +7,13 @@
 //
 
 #import "ExerciseView.h"
+#import "Tally.h"
+#import "Exercise3AppDelegate.h"
 
 
 @implementation ExerciseView
+@synthesize myLabel;
+@synthesize mySlider;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -22,6 +26,8 @@
 
 - (void)dealloc
 {
+    [myLabel release];
+    [mySlider release];
     [super dealloc];
 }
 
@@ -37,12 +43,19 @@
 
 - (void)viewDidLoad
 {
+    Exercise3AppDelegate *appDelegate = (Exercise3AppDelegate *) [[UIApplication sharedApplication] delegate];
+    Tally *tallyObject = appDelegate.tally;
+    myLabel.text = tallyObject.name;
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
 
 - (void)viewDidUnload
 {
+
+    [self setMyLabel:nil];
+    [self setMySlider:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -54,4 +67,19 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (IBAction)changeLabel:(id)sender {
+    myLabel.text = [NSString stringWithFormat:@"Slider value = %f", mySlider.value];
+    
+    Exercise3AppDelegate *appDelegate = (Exercise3AppDelegate *)
+    [[UIApplication sharedApplication] delegate];
+    Tally *tallyObject = appDelegate.tally;
+    [tallyObject addThisNumberToList:mySlider.value];
+    
+}
+
+- (IBAction)displayNextRecord:(id)sender {
+    Exercise3AppDelegate *appDelegate = (Exercise3AppDelegate *)[[UIApplication sharedApplication] delegate];
+    Tally *tallyObject = appDelegate.tally;
+    myLabel.text = tallyObject.currentRecordReport;
+}
 @end

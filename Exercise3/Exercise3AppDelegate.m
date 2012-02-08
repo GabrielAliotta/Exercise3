@@ -9,19 +9,25 @@
 #import "Exercise3AppDelegate.h"
 
 #import "Exercise3ViewController.h"
+#import "ExerciseView.h"
+#import "Tally.h"
 
 @implementation Exercise3AppDelegate
 
 
-@synthesize window=_window;
+@synthesize window=_window, tally =_tally;
 
 @synthesize viewController=_viewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    _tally = [[Tally alloc] init];
+    tally.name = @"Tally Data Model";
+    ExerciseView *exView = [[ExerciseView alloc] initWithNibName:@"ExerciseView" bundle:nil];    
      
-    self.window.rootViewController = self.viewController;
+    self.window.rootViewController = exView;
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -67,6 +73,7 @@
 
 - (void)dealloc
 {
+    [_tally release];
     [_window release];
     [_viewController release];
     [super dealloc];

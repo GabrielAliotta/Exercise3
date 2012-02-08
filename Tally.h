@@ -9,8 +9,14 @@
 #import <Foundation/Foundation.h>
 
 
-@interface Tally : Tally {
-    
+@interface Tally : NSObject {
+    NSString *name;
+    NSMutableArray *listOfNumbers;
 }
+
+@property(nonatomic, retain) NSString *name;
+@property(nonatomic, retain) NSMutableArray *listOfNumbers;
+-(void) addThisNumberToList:(float)number;
+-(NSString *) currentRecordReport;
 
 @end
