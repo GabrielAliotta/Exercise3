@@ -9,10 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface Tally : NSObject {
-    NSString *name;
-    NSMutableArray *listOfNumbers;
-}
+@interface Tally : NSObject
 
 @property(nonatomic, retain) NSString *name;
 @property(nonatomic, retain) NSMutableArray *listOfNumbers;

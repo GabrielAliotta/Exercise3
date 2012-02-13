@@ -12,8 +12,8 @@
 
 
 @implementation ExerciseView
-@synthesize myLabel;
-@synthesize mySlider;
+@synthesize myLabel = _myLabel;
+@synthesize mySlider = _myLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

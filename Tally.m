@@ -10,29 +10,30 @@
 
 
 @implementation Tally
-@synthesize name, listOfNumbers;
+@synthesize name = _name;
+@synthesize listOfNumbers = _listOfNumbers;
 int position = 0;
 
 - (void)dealloc
 {
-    [name release];
-    [listOfNumbers release];
+    [_name release];
+    [_listOfNumbers release];
     [super dealloc];
 }
 
 -(void) addThisNumberToList:(float)number{
-    if(listOfNumbers == nil)
-        listOfNumbers = [[NSMutableArray alloc] init];
-    [listOfNumbers addObject:[NSNumber numberWithFloat:number]];
+    if(_listOfNumbers == nil)
+        _listOfNumbers = [[NSMutableArray alloc] init];
+    [_listOfNumbers addObject:[NSNumber numberWithFloat:number]];
 }
 
 -(NSString *) currentRecordReport{
-    if(listOfNumbers == nil)
+    if(_listOfNumbers == nil)
         return @"No numbers have been added yet";
-    if(position >= [listOfNumbers count])
+    if(position >= [_listOfNumbers count])
         position = 0;
     NSString *report = [NSString stringWithFormat:@"listOfNumbers[%i] = %@", position,
-                        [listOfNumbers objectAtIndex:position]];
+                        [_listOfNumbers objectAtIndex:position]];
     position++;
     return report;
 }

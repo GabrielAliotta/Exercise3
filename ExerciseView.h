@@ -9,11 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ExerciseView : UIViewController {
-    
-    UILabel *myLabel;
-    UISlider *mySlider;
-}
+@interface ExerciseView : UIViewController 
 @property (nonatomic, retain) IBOutlet UILabel *myLabel;
 @property (nonatomic, retain) IBOutlet UISlider *mySlider;
 
