@@ -11,15 +11,11 @@
 
 @class Exercise3ViewController;
 
-@interface Exercise3AppDelegate : NSObject <UIApplicationDelegate> {
-
-    Tally *tally;    
-}
+@interface Exercise3AppDelegate : NSObject <UIApplicationDelegate> 
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) Tally *tally;
 
 @property (nonatomic, retain) IBOutlet Exercise3ViewController *viewController;
-- (IBAction)changeLabel:(id)sender;
-- (IBAction)displayNextRecord:(id)sender;
+
 @end

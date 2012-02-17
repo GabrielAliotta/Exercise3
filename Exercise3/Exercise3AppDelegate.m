@@ -9,7 +9,7 @@
 #import "Exercise3AppDelegate.h"
 
 #import "Exercise3ViewController.h"
-#import "ExerciseView.h"
+#import "Exercise3ViewController.h"
 #import "Tally.h"
 
 @implementation Exercise3AppDelegate
@@ -24,8 +24,8 @@
     // Override point for customization after application launch.
     
     _tally = [[Tally alloc] init];
-    tally.name = @"Tally Data Model";
-    ExerciseView *exView = [[ExerciseView alloc] initWithNibName:@"ExerciseView" bundle:nil];    
+    _tally.name = @"Tally Data Model";
+    Exercise3ViewController *exView = [[Exercise3ViewController alloc] initWithTally: _tally andNibName:@"ExerciseView" bundle:nil];    
      
     self.window.rootViewController = exView;
     [self.window makeKeyAndVisible];
