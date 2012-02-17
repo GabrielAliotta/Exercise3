@@ -21,14 +21,19 @@ int position = 0;
     [super dealloc];
 }
 
--(void) addThisNumberToList:(float)number{
+-(NSMutableArray*) listOfNumbers
+{
     if(_listOfNumbers == nil)
         _listOfNumbers = [[NSMutableArray alloc] init];
-    [_listOfNumbers addObject:[NSNumber numberWithFloat:number]];
+    return _listOfNumbers;
+}
+
+-(void) addThisNumberToList:(float)number{
+    [self.listOfNumbers addObject:[NSNumber numberWithFloat:number]];
 }
 
 -(NSString *) currentRecordReport{
-    if(_listOfNumbers == nil)
+    if(self.listOfNumbers.count == 0)
         return @"No numbers have been added yet";
     if(position >= [_listOfNumbers count])
         position = 0;
