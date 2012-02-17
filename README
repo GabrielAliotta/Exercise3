@@ -1,0 +1,5 @@
+Change
+  - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+by
+ - (id)initWithTally: (Tally*)tally andNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+or just declare the property and then the getter as well.
